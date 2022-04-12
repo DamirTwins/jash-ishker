@@ -1,0 +1,4 @@
+.customTooltip { position: absolute; display: flex; background: #fff; box-shadow: 1px 1px 4px grey; border-radius: 6px; flex-direction: column; }
+.customTooltip .ct-close:focus { outline: none; }
+.customTooltip .content { padding: 10px 0; }
+.customTooltip .content > * { padding: 0 10px; }

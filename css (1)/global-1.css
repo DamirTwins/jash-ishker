@@ -1,0 +1,21 @@
+.icon-spinner-div { -webkit-animation: spin 2s linear infinite; animation: spin 2s linear infinite; text-align: center; content: url(/app/images/icon-spinner.svg); width: 24px; height: 24px; vertical-align: middle; display: inline-block; }
+.icon-spinner-div.white { content: url(../img/svg-icons/icon-spinner-fff.svg); }
+.icon-spinner-div.w30 { width: 30px; height: 30px; }
+.icon-spinner { margin: auto; width: 24px; height: 24px;}
+@-webkit-keyframes spin {100% {-webkit-transform: rotate(360deg); } }
+@keyframes spin {100% {-webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+@keyframes pulse1{0%{opacity:0}25%{opacity:1}75%{opacity:1}100%{opacity:0}to{opacity:0}}
+.s-load-users:before, .resumeCountDiv .dot { transition: opacity 1s; animation:pulse1 3s ease infinite; margin-right: 5px;}
+.resumeCountDiv .resumeCount { margin-right: 5px;}
+.rulesInfo {display:none; position: fixed; z-index: 7777777; bottom: 20px; left: 20px; width: 600px; box-shadow: 0 0 40px rgba(73, 73, 73, 0.2);}
+.rulesInfo.visible {display: block;}
+.rulesInfoWrap {background: rgba(255, 255, 255, 0.9); padding: 20px 60px 20px 20px; }
+.rulesInfoText {line-height: 1.4em; font-size: 16px; }
+.rulesInfoClose {position: absolute; top: 10px; right: 10px; cursor: pointer;}
+.rulesInfoClose svg {width: 40px; height: 40px; }
+.copyright { color: #fff; text-align: center;}
+.grid { display: grid; }
+@media (max-width: 767px) {
+	.rulesInfo {bottom: 0; left: 0; width: 100%; }
+	.rulesInfoWrap {padding: 10px 60px 10px 20px; }
+}
